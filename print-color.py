@@ -5,7 +5,7 @@ from colors import COLORS
 
 def print_color(color_name):
     """
-    Given a `color_name` (ex: gainsboro) print a square on the console with the given color on background
+    Given a `color_name` (ex: gainsboro) print a square on the console with the given color on background
     """
     color = COLORS[color_name]
     print(color_name, '\x1b[48;2;{};{};{}m\x1b[38;2;{};{};{}m{}\x1b[0m'.format(
